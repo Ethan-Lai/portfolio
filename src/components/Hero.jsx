@@ -1,4 +1,5 @@
 import { Button } from "./ui/button"
+import { toast } from "sonner"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
@@ -15,9 +16,17 @@ const Hero= () => {
     const copyEmail = async () => {
         try {
             await navigator.clipboard.writeText("ethanclai03@gmail.com")
-            alert("Email copied to clipboard!")
+            toast("Email copied to clipboard!", {
+                action: {
+                    label: "X"
+                }
+            })
         } catch (err) {
-            alert("Failed to copy email")
+            toast("Failed to copy email", {
+                action: {
+                    label: "X"
+                }
+            })
         }
     }
 
@@ -44,10 +53,10 @@ const Hero= () => {
                         <span className="sr-only">Link to Github</span>
                         <FontAwesomeIcon icon={faGithub} className="text-xl" />
                     </a>
-                    <a onClick={copyEmail} className="cursor-pointer">
+                    <button onClick={copyEmail} className="cursor-pointer">
                         <span className="sr-only">Copy email</span>
                         <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
-                    </a>
+                    </button>
                 </div>
             </div>
             <div>

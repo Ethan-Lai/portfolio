@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Experience from "./components/Experience"
 import Header from "./components/Header"
 import { ThemeProvider } from "./components/theme-provider"
+import { Toaster } from "./components/ui/sonner"
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                     <Blog />
                 </div>
             </div>
+            <Toaster />
         </ThemeProvider>
     )
 }
