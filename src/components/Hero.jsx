@@ -22,7 +22,7 @@ const Hero= () => {
     }
 
     return (
-        <div className="flex justify-center w-full">
+        <div className="flex w-full justify-between">
             <div>
                 <div className="flex flex-col gap-2">
                     <h1 className="text-3xl font-bold">Hi, ethan here</h1>
