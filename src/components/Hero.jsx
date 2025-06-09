@@ -31,13 +31,13 @@ const Hero= () => {
     }
 
     return (
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-between items-center">
             <div>
                 <div className="flex flex-col gap-2">
                     <h1 className="title text-balance text-4xl sm:text-5xl">hi ethan here. 👋</h1>
                     <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">21 year old software developer from Canada 🇨🇦</p>
                     <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">I like to develop full-stack, play sports, and learn new things.</p>
-                    <p className="text-balance text-sm font-semibold sm:text-base"><strong>Any questions? Feel free to email me!</strong></p>
+                    <p className="mt-4 text-balance text-sm font-semibold sm:text-base"><strong>Any questions? Feel free to email me!</strong></p>
                 </div>
 
                 <div className="flex items-center mr-5 gap-4 mt-2">

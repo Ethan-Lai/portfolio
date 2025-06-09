@@ -1,16 +1,18 @@
 import React from "react"
 import { ModeToggle } from "./ui/mode-toggle"
+import { useNavigate } from "react-router-dom"
 
 const Header = () => {
+    let navigate = useNavigate()
+
     return (
-        <div className="flex justify-between items-center fixed w-full h-20 bg-background/75 backdrop-blur-sm max-w-3xl pl-16 pr-16">
+        <div className="flex justify-between items-center fixed w-full h-20 bg-background/75 backdrop-blur-sm max-w-3xl pr-32">
             <div className="flex items-center gap-3">
-                <span>Home</span>
-                <span>Projects</span>
-                <span>Blog</span>
+                <span className="cursor-pointer" onClick={() => navigate("/")}>Home</span>
+                <span className="cursor-pointer" onClick={() => navigate("/projects")}>Projects</span>
+                <span className="cursor-pointer" onClick={() => navigate("/blog")}>Blog</span>
             </div>
             <div className="flex items-center gap-3">
-                <span>hello</span>
                 <ModeToggle />
             </div>
         </div>
