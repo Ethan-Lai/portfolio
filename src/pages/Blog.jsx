@@ -24,7 +24,8 @@ const Blog = () => {
 
     return (
           <div>
-            <h1>My Blog</h1>
+                <h1 className="title text-balance text-4xl sm:text-5xl">Blog</h1>
+                <br />
 
                 {posts.map((post) => (
                     <div key={post.sys.id}>

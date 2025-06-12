@@ -3,7 +3,7 @@ import { toast } from "sonner"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
-import resumePDF from '../assets/Ethan_Resume_SWD.pdf'
+import resumePDF from '/Ethan_Resume_SWD.pdf'
 
 const Hero= () => {
     const downloadResume = () => {
