@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CardAction } from "./ui/card"
 import OneChartLogo from "/OneChartLogo.jpeg"
 import CMALogo from "/CMALogo.png"
+import UTMLogo from "/UTMLogo.jpeg"
 
 const Experience = () => {
     return (
@@ -29,7 +30,7 @@ const Experience = () => {
                             </div>
                             <CardDescription>Software Developer</CardDescription>
                             <CardDescription>
-                                <ul className="list-disc pl-5">
+                                <ul className="list-disc pl-5 text-slate-300">
                                     <li>Developed an automated React form builder to streamline client onboarding, supporting 1,500+ users and reducing development time by 100+ hours</li>
                                     <li>Built reusable React component library for form builder, reducing new form type development time by 20+ hours and supporting 10+ customizable UI elements</li>
                                     <li>Deployed and maintained Docker instances of OneChart on MedStack cluster, serving 10 healthcare organizations with secure cloud infrastructure</li>
@@ -52,7 +53,7 @@ const Experience = () => {
                             </div>
                             <CardDescription>Martial Arts Instructor</CardDescription>
                             <CardDescription>
-                                <ul className="list-disc pl-5">
+                                <ul className="list-disc pl-5 text-slate-300">
                                     <li>Broke down complex martial arts techniques into manageable steps, reducing average skill mastery time by 50%</li>
                                     <li>Adapted teaching methods to accommodate students with diverse learning styles and physical abilities, achieving 80% student retention</li>
                                 </ul>
@@ -60,8 +61,50 @@ const Experience = () => {
                         </CardHeader>
                     </Card>
                 </TabsContent>
-                <TabsContent value="Education">Display Education here</TabsContent>
-                <TabsContent value="Tools">Display Tools here</TabsContent>
+                <TabsContent value="Education">
+                    <Card className="relative">
+                        <CardHeader className="ml-10 pl-10 pt-3 pb-3 border-l-1">
+                            <CardDescription>September 2021 - April 2026</CardDescription>
+                            <div className="flex items-center relative">
+                                <a href="https://www.utm.utoronto.ca/">
+                                    <img 
+                                        src={UTMLogo} 
+                                        alt="University of Toronto Mississauga Logo" 
+                                        className="absolute -left-16 -top-4 w-12 h-12 rounded-full border-1"
+                                    />
+                                </a>
+                                <CardTitle>Champions Martial Arts</CardTitle>
+                            </div>
+                            <CardDescription>Bachelor's of Science in Economics</CardDescription>
+                            <ul className="list-disc pl-5 text-sm text-slate-300">
+                                <li>Computer Science Minor</li>
+                                <li>Mathematical Sciences Minor</li>
+                            </ul>
+                        </CardHeader>
+                    </Card>
+                </TabsContent>
+                <TabsContent value="Tools">
+                    <Card className="relative">
+                        <CardHeader className="ml-10 pl-10 pt-3 pb-3 border-l-1">
+                            <CardDescription>September 2021 - April 2026</CardDescription>
+                            <div className="flex items-center relative">
+                                <a href="https://www.utm.utoronto.ca/">
+                                    <img 
+                                        src={UTMLogo} 
+                                        alt="University of Toronto Mississauga Logo" 
+                                        className="absolute -left-16 -top-4 w-12 h-12 rounded-full border-1"
+                                    />
+                                </a>
+                                <CardTitle>Champions Martial Arts</CardTitle>
+                            </div>
+                            <CardDescription>Bachelor's of Science in Economics</CardDescription>
+                            <ul className="list-disc pl-5 text-sm text-slate-300">
+                                <li>Computer Science Minor</li>
+                                <li>Mathematical Sciences Minor</li>
+                            </ul>
+                        </CardHeader>
+                    </Card>
+                </TabsContent>
             </Tabs>
         </div>
     );
