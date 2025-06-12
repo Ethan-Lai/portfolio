@@ -1,9 +1,9 @@
 import React from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CardAction } from "./ui/card"
-import OneChartLogo from "/OneChartLogo.jpeg"
-import CMALogo from "/CMALogo.png"
-import UTMLogo from "/UTMLogo.jpeg"
+import OneChartLogo from "/organizations/OneChartLogo.jpeg"
+import CMALogo from "/organizations/CMALogo.png"
+import UTMLogo from "/organizations/UTMLogo.jpeg"
 
 const Experience = () => {
     return (
@@ -73,35 +73,20 @@ const Experience = () => {
                                         className="absolute -left-16 -top-4 w-12 h-12 rounded-full border-1"
                                     />
                                 </a>
-                                <CardTitle>Champions Martial Arts</CardTitle>
+                                <CardTitle>University of Toronto Mississauga</CardTitle>
                             </div>
                             <CardDescription>Bachelor's of Science in Economics</CardDescription>
                             <ul className="list-disc pl-5 text-sm text-slate-300">
                                 <li>Computer Science Minor</li>
-                                <li>Mathematical Sciences Minor</li>
+                                <li>Mathematical Science Minor</li>
                             </ul>
                         </CardHeader>
                     </Card>
                 </TabsContent>
                 <TabsContent value="Tools">
-                    <Card className="relative">
-                        <CardHeader className="ml-10 pl-10 pt-3 pb-3 border-l-1">
-                            <CardDescription>September 2021 - April 2026</CardDescription>
-                            <div className="flex items-center relative">
-                                <a href="https://www.utm.utoronto.ca/">
-                                    <img 
-                                        src={UTMLogo} 
-                                        alt="University of Toronto Mississauga Logo" 
-                                        className="absolute -left-16 -top-4 w-12 h-12 rounded-full border-1"
-                                    />
-                                </a>
-                                <CardTitle>Champions Martial Arts</CardTitle>
-                            </div>
-                            <CardDescription>Bachelor's of Science in Economics</CardDescription>
-                            <ul className="list-disc pl-5 text-sm text-slate-300">
-                                <li>Computer Science Minor</li>
-                                <li>Mathematical Sciences Minor</li>
-                            </ul>
+                    <Card>
+                        <CardHeader className="pt-3 pb-3">
+                            <CardDescription>Display Tools here (logo and tool name below)</CardDescription>
                         </CardHeader>
                     </Card>
                 </TabsContent>
