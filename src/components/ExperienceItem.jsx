@@ -21,7 +21,7 @@ const ExperienceItem = ({ experience }) => {
             </div>
             <CardDescription>{experience.role}</CardDescription>
             <CardDescription>
-                <ul className="list-disc pl-5 text-slate-300">
+                <ul className="list-disc pl-5 dark:text-slate-300">
                     {experienceDescription}
                 </ul>
             </CardDescription>

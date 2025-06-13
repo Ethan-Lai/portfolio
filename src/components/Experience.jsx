@@ -14,21 +14,21 @@ const Experience = () => {
                     <TabsTrigger value="Tools">Tools</TabsTrigger>
                 </TabsList>
                 <TabsContent value="Experience">
-                    <Card className="relative">
+                    <Card>
                         {workExperience && workExperience.map(experience => 
                             <ExperienceItem key={experience.id} experience={experience} />
                         )}
                     </Card>
                 </TabsContent>
                 <TabsContent value="Education">
-                    <Card className="relative">
+                    <Card>
                         {educationExperience && educationExperience.map(experience => 
                             <ExperienceItem key={experience.id} experience={experience} />
                         )}
                     </Card>
                 </TabsContent>
                 <TabsContent value="Tools">
-                    <Card className="relative">
+                    <Card>
                         {toolsExperience && toolsExperience.map(experience => 
                             <ExperienceItem key={experience.id} experience={experience} />
                         )}
