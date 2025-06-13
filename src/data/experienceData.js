@@ -18,7 +18,7 @@ export const workExperience = [
     },
     {
         id: 2,
-        logo: "/organizations/CMALogo.jpeg",
+        logo: "/organizations/CMALogo.png",
         logoAlt: "Champions Martial Arts Logo",
         website: "https://www.championsmartialarts.ca/",
         startDate: "April 2024",
@@ -28,7 +28,8 @@ export const workExperience = [
         description: [
             "Broke down complex martial arts techniques into manageable steps, reducing average skill mastery time by 50%",
             "Adapted teaching methods to accommodate students with diverse learning styles and physical abilities, achieving 80% student retention",
-        ]
+        ],
+        customBackground: "bg-white" // Needed for logo visibility
     }
 ]
 
@@ -50,5 +51,5 @@ export const educationExperience = [
 ]
 
 export const toolsExperience = [
-    
+
 ]
