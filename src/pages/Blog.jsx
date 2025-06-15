@@ -20,8 +20,6 @@ const Blog = () => {
     }, [])
 
     if (loading) return <div>Loading ...</div>
-    
-    // title, date, tags, general, code, leetcode
 
     return (
           <div>

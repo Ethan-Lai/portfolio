@@ -50,6 +50,65 @@ export const educationExperience = [
     }
 ]
 
-export const toolsExperience = [
-
-]
+export const tools = [
+    {
+        name: 'React',
+        logo: '/tools/react.svg',
+        alt: 'React logo',
+        color: '#61DAFB'
+    },
+    {
+        name: 'Next.js',
+        logo: '/tools/nextdotjs.svg',
+        alt: 'Next.js logo',
+        color: '#000000'
+    },
+    {
+        name: 'TypeScript',
+        logo: '/tools/typescript.svg',
+        alt: 'TypeScript logo',
+        color: '#3178C6'
+    },
+    {
+        name: 'JavaScript',
+        logo: '/tools/javascript.svg',
+        alt: 'JavaScript logo',
+        color: '#F7DF1E'
+    },
+    {
+        name: 'Python',
+        logo: '/tools/python.svg',
+        alt: 'Python logo',
+        color: '#3776AB'
+    },
+    {
+        name: 'HTML5',
+        logo: '/tools/html5.svg',
+        alt: 'HTML5 logo',
+        color: '#E34F26'
+    },
+    {
+        name: 'CSS3',
+        logo: '/tools/css.svg',
+        alt: 'CSS3 logo',
+        color: '#1572B6'
+    },
+    {
+        name: 'PostgreSQL',
+        logo: '/tools/postgresql.svg',
+        alt: 'PostgreSQL logo',
+        color: '#336791'
+    },
+    {
+        name: 'Docker',
+        logo: '/tools/docker.svg',
+        alt: 'Docker logo',
+        color: '#2496ED'
+    },
+    {
+        name: 'GitHub',
+        logo: '/tools/github.svg',
+        alt: 'GitHub logo',
+        color: '#181717'
+    }
+];
