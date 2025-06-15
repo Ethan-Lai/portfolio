@@ -45,11 +45,11 @@ const Hero= () => {
                         Resume
                         <FontAwesomeIcon icon={faDownload} />
                     </Button>   
-                    <a href="https://www.linkedin.com/in/ethan-lai-2b008221a/">
+                    <a href="https://www.linkedin.com/in/ethan-lai-2b008221a/" target="_blank">
                         <span className="sr-only">Link to LinkedIn</span>
                         <FontAwesomeIcon icon={faLinkedinIn} className="text-xl" />
                     </a>
-                    <a href="https://github.com/Ethan-Lai">
+                    <a href="https://github.com/Ethan-Lai" target="_blank">
                         <span className="sr-only">Link to Github</span>
                         <FontAwesomeIcon icon={faGithub} className="text-xl" />
                     </a>

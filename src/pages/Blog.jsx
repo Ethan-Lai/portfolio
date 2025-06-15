@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { client } from "../client"
+import BlogItem from "@/components/BlogItem"
 
 const Blog = () => {
     const [posts, setPosts] = useState([])
@@ -26,24 +27,8 @@ const Blog = () => {
           <div>
                 <h1 className="title text-balance text-4xl sm:text-5xl">Blog</h1>
                 <br />
-
-                {posts.map((post) => (
-                    <div key={post.sys.id}>
-                            <h2>{post.fields.title}</h2>
-                            <p>
-                                <strong>Date:</strong>{" "}
-                                {new Date(post.fields.date).toLocaleDateString()}
-                            </p>
-                            <p>
-                            <strong>Tags:</strong> {post.fields.tags}
-                            </p>
-                            <h1>General</h1>
-                            <div>{post.fields.general}</div>
-                            <h1>Code</h1>
-                            <div>{post.fields.code}</div>
-                            <h1>Leetcode</h1>
-                            <div>{post.fields.leetcode}</div>
-                    </div>
+                {posts.map(post => (
+                    <BlogItem key={post.sys.id} post={post} />
                 ))}
         </div>
     );
