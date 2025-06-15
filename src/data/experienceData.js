@@ -50,65 +50,82 @@ export const educationExperience = [
     }
 ]
 
-export const tools = [
+export const toolsExperience = [
     {
+        id: 1,
         name: 'React',
         logo: '/tools/react.svg',
         alt: 'React logo',
         color: '#61DAFB'
     },
     {
+        id: 2,
         name: 'Next.js',
         logo: '/tools/nextdotjs.svg',
         alt: 'Next.js logo',
         color: '#000000'
     },
     {
+        id: 3,
         name: 'TypeScript',
         logo: '/tools/typescript.svg',
         alt: 'TypeScript logo',
         color: '#3178C6'
     },
     {
+        id: 4,
         name: 'JavaScript',
         logo: '/tools/javascript.svg',
         alt: 'JavaScript logo',
         color: '#F7DF1E'
     },
     {
+        id: 5,
         name: 'Python',
         logo: '/tools/python.svg',
         alt: 'Python logo',
         color: '#3776AB'
     },
     {
+        id: 6,
         name: 'HTML5',
         logo: '/tools/html5.svg',
         alt: 'HTML5 logo',
         color: '#E34F26'
     },
     {
-        name: 'CSS3',
+        id: 7,
+        name: 'CSS',
         logo: '/tools/css.svg',
-        alt: 'CSS3 logo',
+        alt: 'CSS logo',
         color: '#1572B6'
     },
     {
+        id: 8,
         name: 'PostgreSQL',
         logo: '/tools/postgresql.svg',
         alt: 'PostgreSQL logo',
         color: '#336791'
     },
     {
+        id: 9,
         name: 'Docker',
         logo: '/tools/docker.svg',
         alt: 'Docker logo',
         color: '#2496ED'
     },
     {
+        id: 10,
         name: 'GitHub',
         logo: '/tools/github.svg',
         alt: 'GitHub logo',
-        color: '#181717'
+        color: '#000000'
+    },
+    {        
+        id: 11,
+        name: 'Node.js',
+        logo: '/tools/nodedotjs.svg',
+        alt: 'Node.js logo',
+        color: '#5FA04E'
     }
 ];

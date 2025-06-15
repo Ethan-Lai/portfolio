@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { Card } from "./ui/card"
 import { workExperience, educationExperience, toolsExperience } from "../data/experienceData.js"
 import ExperienceItem from "./ExperienceItem"
+import ToolItem from "./ToolItem"
 
 const Experience = () => {
     return (
@@ -28,9 +29,9 @@ const Experience = () => {
                     </Card>
                 </TabsContent>
                 <TabsContent value="Tools">
-                    <Card>
-                        {toolsExperience && toolsExperience.map(experience => 
-                            <ExperienceItem key={experience.id} experience={experience} />
+                    <Card className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 p-6">
+                        {toolsExperience && toolsExperience.map(tool => 
+                            <ToolItem key={tool.id} tool={tool} />
                         )}
                     </Card>
                 </TabsContent>
