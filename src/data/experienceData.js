@@ -1,5 +1,18 @@
 export const workExperience = [
     {
+        id: 3,
+        logo: "/organizations/OmersLogo.png",
+        logoAlt: "Omers Logo",
+        website: "https://www.omers.com/",
+        startDate: "September 2025",
+        endDate: "December 2025",
+        organization: "OMERS",
+        role: "Full Stack Engineer",
+        description: [
+            "Incoming intern at OMERS as a Fall 2025 Full Stack Engineer"
+        ]
+    },
+    {
         id: 1,
         logo: "/organizations/OneChartLogo.jpeg",
         logoAlt: "OneChart Logo",
