@@ -12,9 +12,8 @@ const ExperienceItem = ({ experience }) => {
             <Badge 
                 key={index} 
                 className="ml-1 mr-1"
-                style={{ backgroundColor: language.color }}
             >
-                {language.name}
+                {language}
             </Badge>
         ) : [];
 
@@ -37,9 +36,9 @@ const ExperienceItem = ({ experience }) => {
                     {experienceDescription}
                 </ul>
             </CardDescription>
-            {
+            {experienceLanguages &&
                 <div className='flex'>
-                    <span className="sr-only">List of tools used at OneChart</span>
+                    <span className="sr-only">{`List of tools used at ${experience.organization}`}</span>
                     {experienceLanguages}   
                 </div>
             }
