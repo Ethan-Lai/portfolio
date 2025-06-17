@@ -13,7 +13,7 @@ const Home = () => {
             <br />
             <Projects />
             <br />
-            <Blog />
+            <Blog limit={5} />
             <Toaster />
         </div>
     )
