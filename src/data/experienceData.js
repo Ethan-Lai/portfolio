@@ -27,6 +27,32 @@ export const workExperience = [
             "Deployed and maintained Docker instances of OneChart on MedStack cluster, serving 10 healthcare organizations with secure cloud infrastructure.",
             "Implemented Stripe API to automate subscription billing, handling 1,500+ checkout transactions.",
             "Developed Celery (Python) workers using Redis to manage AI dictation workflows, eliminating API bottlenecks and improving system response time by 20%."
+        ],
+        languages: [
+            {
+                name: "React",
+                color: "#61DAFB"
+            },
+            {
+                name: "JavaScript",
+                color: "#F7DF1E"
+            },
+            {
+                name: "Python",
+                color: "#3776AB"
+            },
+            {
+                name: "PostgreSQL",
+                color: '#336791'
+            }, 
+            {
+                name: "Docker",
+                color: "#2496ED"
+            },
+            {
+                name: "CSS",
+                color: "#1572B6"
+            }
         ]
     },
     {
