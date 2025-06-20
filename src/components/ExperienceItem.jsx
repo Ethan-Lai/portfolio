@@ -11,7 +11,8 @@ const ExperienceItem = ({ experience }) => {
         experience.languages.map((language, index) => 
             <Badge 
                 key={index} 
-                className="ml-1 mr-1"
+                variant="outline"
+                className="mr-1 mb-1"
             >
                 {language}
             </Badge>
@@ -37,7 +38,7 @@ const ExperienceItem = ({ experience }) => {
                 </ul>
             </CardDescription>
             {experienceLanguages &&
-                <div className='flex'>
+                <div className='flex flex-wrap'>
                     <span className="sr-only">{`List of tools used at ${experience.organization}`}</span>
                     {experienceLanguages}   
                 </div>

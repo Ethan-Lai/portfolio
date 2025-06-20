@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 import resumePDF from '/resume/Ethan_Resume_SWD.pdf'
+import EthanPhoto from "/EthanPhoto.png"
 
 const Hero= () => {
     const downloadResume = () => {
@@ -31,7 +32,7 @@ const Hero= () => {
     }
 
     return (
-        <div className="flex flex-col sm:flex-row w-full justify-between items-center">
+        <div className="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
             <div className="order-2 sm:order-1">
                 <div className="flex flex-col gap-2">
                     <h1 className="title text-balance text-4xl sm:text-5xl">hi ethan here. 👋</h1>
@@ -39,7 +40,6 @@ const Hero= () => {
                     <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">I like to develop full-stack, play sports, and learn new things.</p>
                     <p className="mt-4 text-balance text-sm font-semibold sm:text-base"><strong>Any questions? Feel free to email me!</strong></p>
                 </div>
-
                 <div className="flex items-center mr-5 gap-4 mt-2">
                     <Button onClick={downloadResume} className="cursor-pointer">
                         Resume
@@ -60,7 +60,7 @@ const Hero= () => {
                 </div>
             </div>
             <div className="order-1 sm:order-2">
-                REPLACE WITH IMAGE OF MYSELF
+                <img src={EthanPhoto} alt="Image of Ethan" className="w-60 border-1 rounded-md"/>
             </div>
         </div>
     )
