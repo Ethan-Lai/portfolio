@@ -25,17 +25,22 @@ const ProjectItem = ({ project }) => {
     )
 
     return (
-        <Card className="flex w-full">
-            <CardHeader>
-                <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4" />
-                <CardTitle>{project.name}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-                <div className="flex flex-wrap">
-                    <span className="sr-only">{`List of tools used for ${project.name}`}</span>
-                    {tools} 
+        <Card className="flex w-full h-full">
+            <CardHeader className="flex flex-col justify-between h-full">
+                <div>
+                    <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4" />
+                    <CardTitle>{project.name}</CardTitle>
+                    <CardDescription className="mt-2">{project.description}</CardDescription>
                 </div>
-                <div className="flex flex-wrap">
-                    {links}
+                <div className="space-y-4">                    
+
+                    <div className="flex flex-wrap items-start">
+                        <span className="sr-only">{`List of tools used for ${project.name}`}</span>
+                        {tools} 
+                    </div>
+                    <div className="flex flex-wrap mb-6">
+                        {links}
+                    </div>
                 </div>
             </CardHeader>
         </Card>

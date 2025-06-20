@@ -2,7 +2,7 @@ export const projectsExperience = [
     {
         image: "/projects/NotarePreviewLight.png",
         name: "Notare",
-        description: "AI-powered note-taking application to enhance workflow efficiency through intelligent note organization, real-time editing, and automated content insertion",
+        description: "AI-powered note-taking application to enhance workflow efficiency",
         tools: ["React", "TypeScript", "JavaScript", "Next.js", "PostgreSQL"],
         links: [
             {
@@ -18,12 +18,28 @@ export const projectsExperience = [
     {
         image: "/projects/DeliusPreview.png",
         name: "Delius",
-        description: "Workspace web application, offering pre-designed layouts and intuitive templates to simplify workspace organization and reduce user overwhelm",
+        description: "Workspace application with template selection feature allowing users to choose from multiple workspace types",
         tools: ["React", "JavaScript", "Python", "PostgreSQL", "Flask"],
         links: [
             {
                 name: "Github",
                 link: "https://github.com/Ethan-Lai/delius"
+            },
+        ]
+    },
+    {
+        image: "/projects/PixelPomodoroPreview.png",
+        name: "Pixel Pomodoro",
+        description: "Productivity timer featuring customizable pixel graphics and gamification elements",
+        tools: ["JavaScript", "HTML", "CSS"],
+        links: [
+            {
+                name: "Website",
+                link: "https://pixel-pomodoro.netlify.app/"
+            },
+            {
+                name: "Github",
+                link: "https://github.com/Ethan-Lai/pixel-pormodoro"
             },
         ]
     },
