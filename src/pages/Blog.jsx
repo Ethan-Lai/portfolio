@@ -22,12 +22,12 @@ const Blog = ({ limit }) => {
     if (loading) return <div>Loading ...</div>
 
     return (
-          <div>
-                <h1 className="title text-balance text-4xl sm:text-5xl">{limit ? "Recent Posts" : "Blog"}</h1>
-                <br />
-                {posts.map(post => (
-                    <BlogItem key={post.sys.id} post={post} />
-                ))}
+        <div>
+            <h1 className="title text-balance text-4xl sm:text-5xl">{limit ? "Recent Posts" : "Blog"}</h1>
+            <br />
+            {posts.map(post => (
+                <BlogItem key={post.sys.id} post={post} />
+            ))}
         </div>
     );
 }
