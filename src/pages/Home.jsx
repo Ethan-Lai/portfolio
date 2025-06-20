@@ -11,7 +11,7 @@ const Home = () => {
             <br />
             <Experience />
             <br />
-            <Projects />
+            <Projects limit={2} />
             <br />
             <Blog limit={5} />
             <Toaster />

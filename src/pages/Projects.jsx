@@ -2,10 +2,11 @@ import React from "react"
 import { projectsExperience } from "../data/projectData"
 import ProjectItem from "../components/ProjectItem"
 
-const Projects = () => {
-    const projects = projectsExperience.map(project => 
-        <ProjectItem project={project} />
-    )
+const Projects = ({ limit }) => {
+    const projects = (limit ? projectsExperience.slice(0, limit) : projectsExperience)
+        .map(project => 
+            <ProjectItem project={project} />
+        )
 
     return (
         <div className="flex flex-col w-full">
