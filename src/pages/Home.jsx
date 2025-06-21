@@ -9,9 +9,12 @@ const Home = () => {
         <div>
             <Hero />
             <br />
+            <br />
             <Experience />
             <br />
+            <br />
             <Projects limit={2} />
+            <br />
             <br />
             <Blog limit={5} />
             <Toaster />

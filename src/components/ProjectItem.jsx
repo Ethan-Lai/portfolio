@@ -1,6 +1,10 @@
 import React from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CardAction } from "./ui/card"
 import { Badge } from "./ui/badge"
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
 
 const ProjectItem = ({ project }) => {
     const tools = project.tools.map((tool, index) => 
@@ -14,21 +18,22 @@ const ProjectItem = ({ project }) => {
     )
 
     const links = project.links.map((link, index) => 
-        <Badge
-            key={index}
-            className="mr-1"
-        >
-            <a href={link.link} target="_blank">
+        <a href={link.link} target="_blank">
+            <Badge
+                key={index}
+                className="mr-1 hover:bg-primary/90"
+            >
+                {link.name === "Website" ? <FontAwesomeIcon icon={faGlobe} /> : <FontAwesomeIcon icon={faGithub} />}
                 {link.name}
-            </a>
-        </Badge>
+            </Badge>
+        </a>
     )
 
     return (
         <Card className="flex w-full h-full">
             <CardHeader className="flex flex-col justify-between h-full">
                 <div>
-                    <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4" />
+                    <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4 rounded-sm" />
                     <CardTitle>{project.name}</CardTitle>
                     <CardDescription className="mt-2">{project.description}</CardDescription>
                 </div>

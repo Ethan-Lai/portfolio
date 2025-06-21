@@ -10,7 +10,7 @@ const Projects = ({ limit }) => {
 
     return (
         <div className="flex flex-col w-full">
-            <h1 className="title text-balance text-4xl sm:text-5xl">Projects</h1>
+            <h1 className={`title text-balance ${limit ? "text-4xl" : "text-5xl"} calistoga-regular`}>{ limit ? "featured projects" : "projects"}</h1>
             <br />
             <div className="grid grid-col-1 sm:grid-cols-2 gap-2">
                 {projects}

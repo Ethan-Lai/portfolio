@@ -23,7 +23,7 @@ const Blog = ({ limit }) => {
 
     return (
         <div>
-            <h1 className="title text-balance text-4xl sm:text-5xl">{limit ? "Recent Posts" : "Blog"}</h1>
+            <h1 className={`title text-balance ${limit ? "text-4xl" : "text-5xl"} calistoga-regular`}>{limit ? "recent posts" : "blog"}</h1>
             <br />
             {posts.map(post => (
                 <BlogItem key={post.sys.id} post={post} />

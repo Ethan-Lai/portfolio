@@ -11,7 +11,7 @@ const App = () => {
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">      
             <div className="flex flex-col max-w-3xl ml-auto mr-auto pl-8 pr-8">
                 <Header />
-                <div className="mt-20">
+                <div className="mt-25">
                     <Routes>
                         <Route index element={<Home />} />
                         <Route path="/blog" element={<Blog />} />

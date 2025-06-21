@@ -118,3 +118,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+.calistoga-regular {
+  font-family: "Calistoga", serif;
+  font-weight: 500;
+  font-style: normal;
+}

@@ -35,7 +35,7 @@ const Hero= () => {
         <div className="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
             <div className="order-2 sm:order-1">
                 <div className="flex flex-col gap-2">
-                    <h1 className="title text-balance text-4xl sm:text-5xl">hi ethan here. 👋</h1>
+                    <h1 className="title text-balance text-5xl calistoga-regular">hi ethan here. 👋</h1>
                     <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">21 year old software developer from Canada 🇨🇦</p>
                     <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">I like to develop full-stack, play sports, and learn new things.</p>
                     <p className="mt-4 text-balance text-sm font-semibold sm:text-base"><strong>Any questions? Feel free to email me!</strong></p>
