@@ -36,8 +36,13 @@ export const projectsExperience = [
         ]
     },
     {
-        image: "/projects/PixelPomodoroPreview.png",
-        imagesPreview: [],
+        image: "/projects/pixelPomodoro/PixelPomodoroPreview.png",
+        imagesPreview: [
+            "/projects/pixelPomodoro/PixelPomodoroPreview.png",
+            "/projects/pixelPomodoro/PixelPomodoroPreviewSettings.png",
+            "/projects/pixelPomodoro/PixelPomodoroPreviewPixel.png",
+            "/projects/pixelPomodoro/PixelPomodoroPreviewPixelSettings.png"
+        ],
         name: "Pixel Pomodoro",
         description: "Productivity timer featuring customizable pixel graphics and gamification elements",
         tools: ["JavaScript", "HTML", "CSS"],
@@ -53,8 +58,11 @@ export const projectsExperience = [
         ]
     },
     {
-        image: "/projects/PortfolioPreview.png",
-        imagesPreview: [],
+        image: "/projects/portfolio/PortfolioPreviewDark.png",
+        imagesPreview: [
+            "/projects/portfolio/PortfolioPreviewDark.png",
+            "/projects/portfolio/PortfolioPreviewLight.png"
+        ],
         name: "Ethan's Portfolio",
         description: "Responsive portfolio showcasing my projects, experience and technical skills",
         tools: ["React", "JavaScript", "TailwindCSS", "shadcn/ui"],
