@@ -80,6 +80,10 @@ export const projectsExperience = [
         tools: ["React", "JavaScript", "TailwindCSS", "shadcn/ui"],
         links: [
             {
+                name: "Website",
+                link: "https://ethan-portfolio-dev.vercel.app/"
+            },
+            {
                 name: "Github",
                 link: "https://github.com/Ethan-Lai/portfolio"
             },
