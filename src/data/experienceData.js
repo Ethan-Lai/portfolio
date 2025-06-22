@@ -59,8 +59,10 @@ export const educationExperience = [
         role: "Bachelor's of Science in Economics",
         description: [
             "Computer Science Minor",
-            "Mathematical Science Minor"
-        ]
+            "Mathematical Science Minor",
+            "Coursework:"
+        ],
+        languages: ["Software Engineering", "Data Structures and Algorithms", "Software Design", "Software Tools and Systems Programming"]
     }
 ]
 
