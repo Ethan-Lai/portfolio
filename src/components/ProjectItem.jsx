@@ -61,7 +61,7 @@ const ProjectItem = ({ project }) => {
                             <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4 rounded-sm" />     
                         </DialogTrigger>
                         <DialogContent>
-                            <Carousel className="ml-auto mr-auto w-4/5">
+                            <Carousel className="ml-auto mr-auto w-8/9">
                                 <CarouselContent>
                                     {imagesPreview}
                                 </CarouselContent>
