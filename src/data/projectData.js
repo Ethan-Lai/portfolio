@@ -23,8 +23,20 @@ export const projectsExperience = [
         ]
     },
     {
-        image: "/projects/DeliusPreview.png",
-        imagesPreview: [],
+        image: "/projects/delius/DeliusPreview.png",
+        imagesPreview: [
+            "/projects/delius/DeliusPreview.png",
+            "/projects/delius/DeliusPreviewHome.png",
+            "/projects/delius/DeliusPreviewWeather.png",
+            "/projects/delius/DeliusPreviewCalendar.png",
+            "/projects/delius/DeliusPreviewCalendar2.png",
+            "/projects/delius/DeliusPreviewEvents.png",
+            "/projects/delius/DeliusPreviewTemplates.png",
+            "/projects/delius/DeliusPreviewTemplate1.png",
+            "/projects/delius/DeliusPreviewTemplate1Note.png",
+            "/projects/delius/DeliusPreviewSettings.png",
+            "/projects/delius/DeliusPreviewContact.png",
+        ],
         name: "Delius",
         description: "Workspace application with template selection feature allowing users to choose from multiple workspace types",
         tools: ["React", "JavaScript", "Python", "PostgreSQL", "Flask", "Chakra UI"],
