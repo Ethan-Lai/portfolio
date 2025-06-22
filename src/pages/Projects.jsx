@@ -9,8 +9,8 @@ const Projects = ({ limit }) => {
     const navigate = useNavigate()
     
     const projects = (limit ? projectsExperience.slice(0, limit) : projectsExperience)
-        .map(project => 
-            <ProjectItem project={project} />
+        .map((project, index) => 
+            <ProjectItem key={index} project={project} />
         )
 
     return (

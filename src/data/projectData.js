@@ -1,6 +1,13 @@
 export const projectsExperience = [
     {
-        image: "/projects/NotarePreviewDark.png",
+        image: "/projects/notare/NotarePreviewDark.png",
+        imagesPreview: [
+            "/projects/notare/NotarePreviewDark.png",
+            "/projects/notare/NotarePreviewLight.png",
+            "/projects/notare/NotarePreviewUpload.png",
+            "/projects/notare/NotarePreviewSearch.png",
+            "/projects/notare/NotarePreviewDeleteAccount.png",
+        ],
         name: "Notare",
         description: "AI-powered note-taking application to enhance workflow efficiency",
         tools: ["React", "TypeScript", "JavaScript", "Next.js", "PostgreSQL", "Mantine"],
@@ -17,6 +24,7 @@ export const projectsExperience = [
     },
     {
         image: "/projects/DeliusPreview.png",
+        imagesPreview: [],
         name: "Delius",
         description: "Workspace application with template selection feature allowing users to choose from multiple workspace types",
         tools: ["React", "JavaScript", "Python", "PostgreSQL", "Flask", "Chakra UI"],
@@ -29,6 +37,7 @@ export const projectsExperience = [
     },
     {
         image: "/projects/PixelPomodoroPreview.png",
+        imagesPreview: [],
         name: "Pixel Pomodoro",
         description: "Productivity timer featuring customizable pixel graphics and gamification elements",
         tools: ["JavaScript", "HTML", "CSS"],
@@ -45,6 +54,7 @@ export const projectsExperience = [
     },
     {
         image: "/projects/PortfolioPreview.png",
+        imagesPreview: [],
         name: "Ethan's Portfolio",
         description: "Responsive portfolio showcasing my projects, experience and technical skills",
         tools: ["React", "JavaScript", "TailwindCSS", "shadcn/ui"],
