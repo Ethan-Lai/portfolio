@@ -143,5 +143,12 @@ export const toolsExperience = [
         logo: '/tools/nodedotjs.svg',
         alt: 'Node.js logo',
         color: '#5FA04E'
+    },
+    {
+        id: 12,
+        name: 'Tailwind',
+        logo: '/tools/tailwindcss.svg',
+        alt: 'Tailwind CSS logo',
+        color: '#06B6D4'
     }
 ];
