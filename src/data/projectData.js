@@ -89,4 +89,14 @@ export const projectsExperience = [
             },
         ]
     },
+    {
+        name: "Travel Log",
+        description: "Website used to help users manage travel expenses easily. Plan to do this using Plaid API, and allowing custom manual inputs for any cash payments made.",
+        status: true
+    },
+    {
+        name: "MMA Match Analyzer",
+        description: "Tool that breaks down video footage, highlighting each fighter's moves and potential weaknesses. Designed for newer fighters to help them study and learn from their mistakes to improve faster.",
+        status: true
+    },
 ]

@@ -22,7 +22,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 
 const ProjectItem = ({ project }) => {
-    const tools = project.tools.map((tool, index) => 
+    const tools = project.tools?.map((tool, index) => 
         <Badge 
             key={index} 
             variant="outline"
@@ -32,7 +32,7 @@ const ProjectItem = ({ project }) => {
         </Badge>
     )
 
-    const links = project.links.map((link, index) => 
+    const links = project.links?.map((link, index) => 
         <a key={index} href={link.link} target="_blank">
             <Badge
                 key={index}
@@ -44,7 +44,7 @@ const ProjectItem = ({ project }) => {
         </a>
     )
 
-    const imagesPreview = project.imagesPreview.map((image, index) => (
+    const imagesPreview = project.imagesPreview?.map((image, index) => (
         <CarouselItem key={index}>
             <div className="p-1">
                 <img src={image} alt={`Photo of ${project.name} ${index}`} className="mt-6 mb-4 rounded-sm" />     
@@ -55,34 +55,40 @@ const ProjectItem = ({ project }) => {
     return (
         <Card className="flex w-full h-full">
             <CardHeader className="flex flex-col justify-between h-full">
-                <div>
-                    <Dialog>
-                        <DialogTrigger className="cursor-pointer">
-                            <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4 rounded-sm" />     
-                        </DialogTrigger>
-                        <DialogContent>
-                            <Carousel className="ml-auto mr-auto w-8/9">
-                                <CarouselContent>
-                                    {imagesPreview}
-                                </CarouselContent>
-                                <CarouselPrevious />
-                                <CarouselNext />
-                            </Carousel>
-                        </DialogContent>
-                    </Dialog>
-                    <CardTitle>{project.name}</CardTitle>
+                <div className={project.status ? 'mt-6 mb-6' : ''}>
+                    {imagesPreview &&
+                        <Dialog>
+                            <DialogTrigger className="cursor-pointer">
+                                <img src={project.image} alt={`Photo of ${project.name}`} className="mt-6 mb-4 rounded-sm" />     
+                            </DialogTrigger>
+                            <DialogContent>
+                                <Carousel className="ml-auto mr-auto w-8/9">
+                                    <CarouselContent>
+                                        {imagesPreview}
+                                    </CarouselContent>
+                                    <CarouselPrevious />
+                                    <CarouselNext />
+                                </Carousel>
+                            </DialogContent>
+                        </Dialog>
+                    }
+                    <div className="flex justify-between items-center">
+                        <CardTitle>{project.name}</CardTitle>
+                        {project.status && <Badge variant="secondary">Planning</Badge>}
+                    </div>
                     <CardDescription className="mt-2">{project.description}</CardDescription>
                 </div>
-                <div className="space-y-4">                    
-
-                    <div className="flex flex-wrap items-start">
-                        <span className="sr-only">{`List of tools used for ${project.name}`}</span>
-                        {tools} 
+                {project.tools && project.links &&
+                    <div className="space-y-4">                    
+                        <div className="flex flex-wrap items-start">
+                            <span className="sr-only">{`List of tools used for ${project.name}`}</span>
+                            {tools} 
+                        </div>
+                        <div className="flex flex-wrap mb-6">
+                            {links}
+                        </div>
                     </div>
-                    <div className="flex flex-wrap mb-6">
-                        {links}
-                    </div>
-                </div>
+                }
             </CardHeader>
         </Card>
     )
