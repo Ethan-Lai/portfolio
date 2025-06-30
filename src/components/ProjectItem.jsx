@@ -74,7 +74,7 @@ const ProjectItem = ({ project }) => {
                     }
                     <div className="flex justify-between items-center">
                         <CardTitle>{project.name}</CardTitle>
-                        {project.status && <Badge variant="secondary">Planning</Badge>}
+                        {project.status && <Badge variant="secondary">{project.status}</Badge>}
                     </div>
                     <CardDescription className="mt-2">{project.description}</CardDescription>
                 </div>

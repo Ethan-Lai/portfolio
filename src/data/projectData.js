@@ -91,12 +91,19 @@ export const projectsExperience = [
     },
     {
         name: "Travel Log",
-        description: "Website used to help users manage travel expenses easily. Plan to do this using Plaid API, and allowing custom manual inputs for any cash payments made.",
-        status: true
+        description: "Travel expense tracker with automatic transaction imports using Plaid API and manual expense management.",
+        tools: ["React", "Javascript", "Node.js", "Express.js", "PostgreSQL", "TailwindCSS", "shadcn/ui"],
+        links: [
+            {
+                name: "Github",
+                link: "https://github.com/Ethan-Lai/travel-log"
+            },
+        ],
+        status: "In Progress"
     },
     {
         name: "MMA Match Analyzer",
         description: "Tool that breaks down video footage, highlighting each fighter's moves and potential weaknesses. Designed for newer fighters to help them study and learn from their mistakes to improve faster.",
-        status: true
+        status: "Planning"
     },
 ]
